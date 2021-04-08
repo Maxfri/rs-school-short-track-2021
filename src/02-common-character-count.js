@@ -11,6 +11,9 @@
  */
 function getCommonCharacterCount(/* s1, s2 */) {
   throw new Error('Not implemented');
+  // let count = 0;
+  // s1.split('').map((char) => (s2.includes(char) ? count++ : false));
+  // return count;
 }
 
 module.exports = getCommonCharacterCount;
