@@ -15,6 +15,14 @@
  */
 function renameFiles(/* names */) {
   throw new Error('Not implemented');
+  // let files = {};
+  // for (let i = 0; i <= names.length; i++) {
+  //   if (!files.names) {
+  //     files.names = 1;
+  //   } else {
+  //     files.names++;
+  //   }
+  // }
 }
 
 module.exports = renameFiles;
