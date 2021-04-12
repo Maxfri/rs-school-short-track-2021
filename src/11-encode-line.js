@@ -8,18 +8,23 @@
  * For aabbbc should return 2a3bc
  *
  */
-function encodeLine(/* str */) {
-  throw new Error('Not implemented');
-  // const count = {};
-  // str.split('').map((char) => {
-  //   if (!count[char]) {
-  //     count[char] = 1;
-  //   } else {
-  //     count[char]++;
-  //   }
-  //   return count[char];
-  // });
-  // let result = [];
+function encodeLine(str) {
+  let count = 0;
+  let result = '';
+  for (let i = 0; i <= str.length; i++) {
+    if (str[i] === str[i + 1]) {
+      count++;
+    } else {
+      count++;
+      if (count === 1) {
+        result += str[i];
+      } else {
+        result += count + str[i];
+      }
+      count = 0;
+    }
+  }
+  return result;
 }
 
 module.exports = encodeLine;
