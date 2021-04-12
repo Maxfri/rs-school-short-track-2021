@@ -11,17 +11,7 @@
  *
  */
 function getSumOfDigits(n) {
-  let sum = 0;
-  let num = n;
-  while (num > 0 || sum > 9) {
-    if (num === 0) {
-      num = sum;
-      sum = 0;
-    }
-    sum += num % 10;
-    num = Math.floor(num / 10);
-  }
-  return sum;
+  return ((n - 1) % 9) + 1;
 }
 
 module.exports = getSumOfDigits;
